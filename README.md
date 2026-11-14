@@ -14,6 +14,21 @@ Notebooks pédagogiques pour explorer les modèles de séquences et les modèles
 
 Chaque notebook est autonome : exécuter ses cellules dans l'ordre, du début à la fin.
 
+## Deuxième partie : exercices corrigés
+
+| Exercice | Notebook | Contenu |
+| --- | --- | --- |
+| 1 | [Prévision électrique](notebooks/exercises/01_energy_transformer.ipynb) | EnergyTransformer, validation chronologique, MAE/RMSE en kW et deux références. |
+| 2 | [Mini-GPT](notebooks/exercises/02_mini_gpt.ipynb) | Modèle causal par caractères entraîné depuis zéro, test de causalité et comparaison des températures. |
+| 3 | [Mini-BERT](notebooks/exercises/03_mini_bert.ipynb) | Modèle bidirectionnel par mots, masquage 80/10/10, test du padding et exactitude de validation. |
+
+Les solutions incluent le code, les résultats d'exécution, les graphiques et les réponses aux questions.
+Le [corpus original](notebooks/exercises/corpus.txt) est partagé par les exercices 2 et 3.
+Pour l'exercice 1, télécharger le jeu [Individual Household Electric Power Consumption sur UCI](https://archive.ics.uci.edu/dataset/235/individual+household+electric+power+consumption)
+et décompresser `household_power_consumption.txt` à la racine du dépôt. Ce fichier volumineux reste local.
+Les exercices utilisent uniquement la bibliothèque standard, NumPy, Matplotlib et PyTorch, déjà prévus dans l'environnement.
+L'entraînement s'exécute sur CPU ou sur CUDA si disponible ; sa durée dépend du matériel.
+
 ## Installation
 
 Prérequis : Python 3.11 ou supérieur et [uv](https://docs.astral.sh/uv/).
